@@ -1,5 +1,5 @@
 package java_20190718;
-
+//
 public class LotteryDemo {
 	public static void main(String[] args) {
 		// Math.random() => 0보다 크거나 같고 1보다 작은 양수를 double 값으로 반환.
