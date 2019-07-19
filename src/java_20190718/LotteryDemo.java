@@ -1,15 +1,15 @@
 package java_20190718;
-//
+
 public class LotteryDemo {
 	public static void main(String[] args) {
-		// Math.random() => 0보다 크거나 같고 1보다 작은 양수를 double 값으로 반환.
-		for (int k = 0; k < 5; k++) {
+		//전체를 5번 돌리자는 말임 밑에 k들어간 for loop
+		//for (int k = 0; k < 5; k++) {
 			int[] lotto = new int[6];
-
 			for (int i = 0; i < lotto.length; i++) {
+				// Math.random() => 0보다 크거나 같고 1보다 작은 양수를 double 값으로 반환.
+				double random = Math.random();
 				// temp는 1보다 크거나 같고 45보다 작거나 같은 임의의 값
 				// 매번 새로 생성되어야 한다.
-				double random = Math.random();
 				int temp = (int) (random * 45) + 1;
 				if (i == 0) { // 첫번째는 비교가 필요없기 때문에 바로 입력
 					lotto[i] = temp;
@@ -46,10 +46,9 @@ public class LotteryDemo {
 				}
 			}
 			for (int i = 0; i < lotto.length; i++) {
-				System.out.print(lotto[i] + "\t"
-						+ "");
+				System.out.print(lotto[i] + "\t");
 			}
 			System.out.println();
 		}
 	}
-}
+  //}
