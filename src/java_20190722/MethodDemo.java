@@ -62,13 +62,13 @@ public class MethodDemo {
         for(int a : temp) {  //temp를 출력할 임의의 변수명 a
         	System.out.print(a+"\t");
         }
-        System.out.println();
+        System.out.println();  //이거는 오름차순 안하고 결과 출력
         
-        m1.ascending(temp);
+        m1.ascending(temp);    //오름차순 진행
         
         for(int a : temp) {
         	System.out.print(a+"\t");
         }
-        System.out.println();
+        System.out.println();  //이거는 오름차순 하고 결과 출력
      }
 }

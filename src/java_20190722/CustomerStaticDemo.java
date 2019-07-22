@@ -4,7 +4,10 @@ import java_20190719.Customer;//Customer자료가 없어서 다른파일에서 �
 public class CustomerStaticDemo {
 	public static void main(String[] args) {
 		//static변수는 class이름으로 접근하는 것이 더 좋다.
-		//제일 위에 나타내 주는게 더 좋다.
+		//제일 위에 나타내 주는게 더 좋다. 
+		//Customer파일에서 static으로 잡아줌. 이자율을 계속 바꾸긴 힘드니깐 
+		//클래스명.interestRate를 해주면 이자율을 객체들이 참조(공유)할 수 있음
+		
   		Customer.interestRate = 3.5; 
 		
         Customer c1= new Customer();

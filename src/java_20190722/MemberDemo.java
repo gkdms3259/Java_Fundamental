@@ -20,6 +20,5 @@ public class MemberDemo {
 		System.out.println(m.getSsn2());
 		System.out.println(m.getAge());
 		System.out.println(m.getRegdate());
-	
 	}
 }
