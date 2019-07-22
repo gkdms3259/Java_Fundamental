@@ -2,7 +2,7 @@ package java_20190722.aa;
 
 public class NoticeDemo {
     public static void main(String[] args) {
-		Notice n1 = new Notice();
+		Notice n1 = new Notice(); //객체생성  
 		//public은 서로 다른 패키지도 접근가능
 		n1.number = 1;  
 		//protected는 서로 다른 패키지이면서 상속받은 경우에는 접근가능
