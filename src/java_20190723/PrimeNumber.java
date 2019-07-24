@@ -15,7 +15,7 @@ public class PrimeNumber {
 				}
 			}
 			if(isPrimeNumber) {
-				count++;
+				count++;         //count를 소수의 총 갯수를 세어주는 변수로 지정해놨음
 				System.out.print(i+"\t");
 			}
 		}
