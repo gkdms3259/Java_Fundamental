@@ -10,7 +10,7 @@ public class InitializationDemo2 {
 	public InitializationDemo2(int a) {
 		super() ;
 		System.out.println("생성자");
-		this.a = a;
+		this.a = a; 
 	}
 	
 	public static void main(String[] args) {

@@ -5,7 +5,7 @@ public class Customer2 {
 	String phone1;
 	String phone2;
 	String phone3;
-	 public Customer2() {
+	 public Customer2() { 
 		 super();
 	 }
 

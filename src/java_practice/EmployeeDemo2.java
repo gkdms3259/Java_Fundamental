@@ -10,7 +10,7 @@ public class EmployeeDemo2 {
 		e1.zipcode="1234";
 		e1.address1="경기도";
 		e1.address2="성남시";
-		e1.id="gkdms3259";
+		e1.id="gkdms3259"; 
 		e1.pwd="12345";
 	}
 	//System.out.println("e1.name");

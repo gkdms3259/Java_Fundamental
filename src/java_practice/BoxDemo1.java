@@ -3,7 +3,7 @@ package java_practice;
 public class BoxDemo1 {
 	int a;
 	static int b;
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		b=20;
 		BoxDemo1.b=30;
 		BoxDemo1 b = new BoxDemo1() ;

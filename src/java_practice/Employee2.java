@@ -4,7 +4,7 @@ public class Employee2 extends Customer2 {
 	String zipcode;
 	String address1;
 	String address2;
-	String id;
+	String id; 
 	String pwd;
 
 }

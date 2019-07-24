@@ -7,7 +7,7 @@ public class Box1 {
      
 	static final String NAME ="BOX1";
 	
-	public void change(Box1 b) {
+	public void change(Box1 b) { 
 		int a = 0;
 		String str = null;
 		double d = 0.0;
