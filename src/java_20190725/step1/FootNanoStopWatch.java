@@ -8,9 +8,9 @@ public class FootNanoStopWatch {
 	long endNanoTime;
 	
 	 public double getElapsedTime() {     
-		return (double)(endTime - startTime)/(double)1000;
-	}
-	 public double getElapsedNanoTime() {     
+		return (double)(endTime - startTime)/(double)1000; //자릿수 맞춰주려구~
+	}                                                     //안나눠주면 소수점안나오게 구해져서ㅠ
+ 	 public double getElapsedNanoTime() {     
 	return (double)(endNanoTime - startNanoTime)/(double)1000000000;
 	}
 	
