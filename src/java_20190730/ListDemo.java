@@ -34,7 +34,7 @@ public class ListDemo {
 		list.add(p4);//할당
 		
 		//삭제 //list.remove(0); 
-		list.remove(2); //앞이나 중간부분이나 지워버리면 비워두지않고 당겨서 번호를 다시 순차적으로 부여함.
+		list.remove(0); //앞이나 중간부분이나 지워버리면 비워두지않고 당겨서 번호를 다시 순차적으로 부여함.
 		
 		//모두삭제
 		//for(int i=0; i<list.size();i++) {
@@ -47,8 +47,18 @@ public class ListDemo {
 			System.out.println(temp);
 		}
 		//enhanced for loop 출력 가능(제너릭으로 선언한 경우만 가능)
-		for (Product product : list) {
-			System.out.println(product);
+		//for (Product product : list) {
+		//	System.out.println(product);
+		//}
+		
+		for(Product product : list) {
+			if(product.number == 3) { //int비교는 ==연산자로 비교
+				product.price = 3500;
+			}
+			for(int i = 0; i<list.size();i++) {
+				Product temp = list.get(i);
+				System.out.println(temp);
+			}
 		}
 	}
 
