@@ -35,7 +35,7 @@ public class MemberManagementDemo {
 		} else if (selectedIndex.equals("5")) {
 			System.out.println("THE END..");
 		} else {
-			System.out.println("!!warning!!");
+			System.err.println("!!warning!!");
 			print();
 			String index = console("번호를 선택하세요:");
 			run(index);
