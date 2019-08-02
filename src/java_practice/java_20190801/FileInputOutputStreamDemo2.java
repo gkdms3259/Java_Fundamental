@@ -1,4 +1,4 @@
-package java_practice_java_20190801;
+package java_practice.java_20190801;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
