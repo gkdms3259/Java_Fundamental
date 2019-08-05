@@ -21,7 +21,7 @@ public class NaverCafeScanningDemo {
         FileWriter fw = null;
         BufferedWriter bw = null;
         PrintWriter pw = null;
-  
+   
 	    try {
 	    	isr = new InputStreamReader(is); 
 	    	br = new BufferedReader(isr); 
