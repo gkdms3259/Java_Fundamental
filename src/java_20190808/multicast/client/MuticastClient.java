@@ -104,8 +104,7 @@ public class MuticastClient implements ActionListener{
 					
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
-					//broadcast(readLine+"\n");
-					//list.remove(this);
+				
 					e1.printStackTrace();
 				}
 			}
@@ -132,17 +131,7 @@ public class MuticastClient implements ActionListener{
 		if(message.trim().length()==0) {
 			JOptionPane.showMessageDialog(jframe, "경고!!","Warning",JOptionPane.ERROR_MESSAGE);
 		}else {
-			try {
-				bw.write(id+ " : " +message+ "\n");
-				bw.flush();
-				//String readLine = br.readLine();
-				//jta.append(readLine +"\n");
-			} catch (IOException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
-			
-				
+			sendMessage(message);
 			
 		//텍스트 에어리어에 추가하기
 		//jta.append(id+ " : " +message+ "\n");
@@ -173,6 +162,18 @@ public class MuticastClient implements ActionListener{
 		jtf.setText("");
 		jtf.requestFocus();
 	
+		}
+	}
+
+	private void sendMessage(String message) {
+		try {
+			bw.write(id+ " : " +message+ "\n");
+			bw.flush();
+			//String readLine = br.readLine();
+			//jta.append(readLine +"\n");
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
 		}
 	}
 	private void close() {
