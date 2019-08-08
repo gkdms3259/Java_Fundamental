@@ -16,7 +16,7 @@ public class EchoClient {
 	private int port;
 	public EchoClient(String ip, int port) {
 		this.ip = ip;
-		this.port = port;
+		this.port = port; 
 	}
 	public void run() {
 		Socket socket = null;
