@@ -8,8 +8,9 @@ public class MemberFindDto {
 	private String edate;
 	
 	//생성자 만들기
-	//seq
-	//
+	//생성자 초기화 하고
+	//setter,getter만들기
+	
 
 	
 }

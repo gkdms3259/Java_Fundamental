@@ -1,5 +1,5 @@
 package java_20190808.file.client;
-
+//파일 받아오기.
 	import java.io.BufferedWriter;
 	import java.io.File;
 	import java.io.FileOutputStream;
@@ -36,7 +36,7 @@ package java_20190808.file.client;
 				out = socket.getOutputStream();
 				osw = new OutputStreamWriter(out);
 				bw = new BufferedWriter(osw);
-				bw.write("mariadb.pdf"); // osw.write("안녕"); 이렇게 이것으로만 보내도 괜춘.
+				bw.write("java-12.pdf"); // osw.write("안녕"); 이렇게 이것으로만 보내도 괜춘.
 				bw.newLine();
 				bw.flush();
 
@@ -44,7 +44,7 @@ package java_20190808.file.client;
 				in = socket.getInputStream();
 				File f = new File("c:\\dev\\test\\network");
 				f.mkdirs();
-				f = new File(f, "mariadb.pdf");
+				f = new File(f, "scott.sql");
 				fos = new FileOutputStream(f);
 				byte[] readBytes = new byte[1024 * 8];
 				int readByteCount = 0;
